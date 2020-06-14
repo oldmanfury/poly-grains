@@ -1,8 +1,8 @@
-#N canvas -8 -8 1920 997 12;
+#N canvas 4 53 1912 997 12;
 #N canvas -8 -8 1920 997 liverecplay 0;
 #N canvas 0 50 450 300 (subpatch) 0;
-#X array \$1-researray 192000 float 2;
-#X coords 0 1 192000 -1 200 140 1;
+#X array \$1-researray 480000 float 2;
+#X coords 0 1 480000 -1 200 140 1;
 #X restore 56 708 graph;
 #X obj 7 345 inlet~;
 #X msg 122 551 bang;
@@ -659,11 +659,11 @@ in a preset file) \, 1 = it does;
 #X obj 38 81 tgl 15 0 \$1-resssync \$1-resrsync sync_with_ext_clock
 17 7 0 10 -228856 -1 -1 0 1;
 #X obj 43 58 hsl 200 15 0 1 0 0 aar \$1-resrstatus empty -2 -8 0 10
--86277 -260097 -1 9950 1;
+-86277 -260097 -1 5373 1;
 #X obj 118 15 cnv 15 125 40 empty empty empty 20 12 0 14 -233017 -66577
 0;
 #X obj 125 32 nbx 5 14 1 60 0 0 \$1-ressmax \$1-resrmax max_size 0
--8 0 10 -262144 -1 -1 4 256;
+-8 0 10 -262144 -1 -1 10 256;
 #X obj 197 32 bng 15 250 50 0 \$1-ressmaxb \$1-resrmaxb go 17 7 0 10
 -262144 -1 -1;
 #X obj 176 114 bng 10 250 50 0 \$1-ressextraoptions empty extra_options
@@ -1115,6 +1115,14 @@ in a preset file) \, 1 = it does;
 #X restore 357 348 pd clear_array;
 #X obj 38 102 bng 15 250 50 0 \$1-ressclear \$1-resrclear clear 17
 7 0 10 -237178 -1 -1;
+#X msg 83 411 RECORDING - press B1 to stop;
+#X obj 83 436 s screenLine5;
+#X obj 90 353 r \$1-ressrec;
+#X obj 90 378 sel 1;
+#X obj 340 502 s replot;
+#X msg 341 473 1;
+#X obj 291 570 s screenLine5;
+#X msg 291 545 PLAYING RECORDING;
 #X connect 0 0 5 0;
 #X connect 1 0 0 0;
 #X connect 4 0 20 0;
@@ -1125,4 +1133,11 @@ in a preset file) \, 1 = it does;
 #X connect 16 0 29 0;
 #X connect 20 0 0 1;
 #X connect 29 0 17 0;
+#X connect 34 0 35 0;
+#X connect 36 0 37 0;
+#X connect 37 0 34 0;
+#X connect 37 1 39 0;
+#X connect 37 1 41 0;
+#X connect 39 0 38 0;
+#X connect 41 0 40 0;
 #X coords 0 -1 1 1 270 140 1 0 0;

@@ -245,7 +245,7 @@
 #X obj 486 275 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 536 311 t b b b b b;
-#N canvas 357 212 1433 839 touchOSC 1;
+#N canvas 357 212 1433 839 touchOSC 0;
 #X obj 80 34 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 81 201 unpackOSC;
@@ -1112,9 +1112,9 @@
 #X connect 37 0 38 0;
 #X connect 39 0 4 0;
 #X restore 400 430 pd initSettings;
-#X obj 590 66 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 594 68 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X msg 535 54 0;
+#X msg 539 62 0;
 #X obj 313 14 r~ inL;
 #X obj 373 23 r~ inR;
 #N canvas 244 238 1098 813 waveformplot 0;
@@ -1308,7 +1308,7 @@
 #X obj 63 525 outlet~ Left;
 #X obj 363 533 outlet~ Right;
 #X obj 741 234 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 12111 1;
+-1 -1 0 1;
 #X floatatom 746 185 5 0 0 0 - - -;
 #X obj 746 160 r rot12;
 #X obj 148 327 r modwheel;
@@ -1445,6 +1445,13 @@
 #X obj 86 899 throw~ outL;
 #X obj 271 903 throw~ outR;
 #X obj 455 385 delay 3000;
+#X obj 745 51 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 745 71 sel 1;
+#X msg 741 100 64 127;
+#X msg 800 102 64 0;
+#X obj 741 125 s touchkey;
+#X obj 825 130 s touchkey;
 #X connect 0 0 1 0;
 #X connect 0 0 5 0;
 #X connect 0 1 1 1;
@@ -1457,6 +1464,7 @@
 #X connect 8 1 31 0;
 #X connect 8 4 6 0;
 #X connect 10 0 17 0;
+#X connect 10 0 32 0;
 #X connect 10 1 16 0;
 #X connect 11 0 1 4;
 #X connect 11 1 1 6;
@@ -1476,3 +1484,8 @@
 #X connect 28 0 29 0;
 #X connect 28 1 30 0;
 #X connect 31 0 15 0;
+#X connect 32 0 33 0;
+#X connect 33 0 34 0;
+#X connect 33 1 35 0;
+#X connect 34 0 36 0;
+#X connect 35 0 37 0;
