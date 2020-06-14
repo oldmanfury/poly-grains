@@ -15,7 +15,7 @@ enc4: rand pos
 
 To load a patch - hold but3 and rotate enc1.  Release the button to load.  Also - quick press button3 reloads, which is useful when loading is botched (happens... I'm working on it).
 
-Long-press button 1 to record up to 10 seconds of a sample short press to stop recording.
+Long-press button 1 (> 3 seconds) to record up to 10 seconds of a sample.  Begins recording when you relesae.  Short press button 1 to stop recording.
 
 Short-press button 1 to play sample continuously.
 
