@@ -4,7 +4,7 @@ Download the zip folder and place it in your \\norns\we\sidekick\patches\Organel
 Refresh the menu so it shows the "install zip file" option and select it.
 Hopefully you may now select the patch from sidekick.
 Copy the touchosc template polygrains.touchosc to your ipad.
-You'll need to set the address in the patch it is located in the upper left corner - click pd touchOSC and set the ip address of your ipad
+You'll need to set the address in the patch. It is located in the upper left corner - click "pd touchOSC" and set the ip address and port of your ipad.  You may also need to set the receive port (mine is 10111) so that the ipad shows current settings.
 
 The four encoders on Fates are 
 enc1: position 
