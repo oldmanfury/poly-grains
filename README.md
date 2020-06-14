@@ -1,5 +1,5 @@
 # poly-grains
-polyphonic granular synthesizer for norns-mother / organelle
+polyphonic granular synthesizer for norns-mother / organelle.  Adapted from Has Roel's abunch archive: http://www.hansroels.be/abunch-eng.htm
 
 Download the zip folder and place it in your \\norns\we\sidekick\patches\Organelle folder
 
