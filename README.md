@@ -15,7 +15,9 @@ enc4: rand pos
 
 To load a patch - hold but3 and rotate enc1.  Release the button to load.  Also - quick press button3 reloads, which is useful when loading is botched (happens... I'm working on it).
 
-Long-press button 1 to record up to 10 seconds of a sample short press to stop recording (display doesn't update yet, but it seems to be working otherwise).
+Long-press button 1 to record up to 10 seconds of a sample short press to stop recording.
+
+Short-press button 1 to play sample continuously.
 
 Midi keyboards may be used.  I have it set up for Native Instruments Komplete, but Norns Mother has its own midi-CC map that conflicts a bit with my map - a work in progress?
 
