@@ -19,6 +19,9 @@ Long-press button 1 to record up to 10 seconds of a sample short press to stop r
 Midi keyboards may be used.  I have it set up for Native Instruments Komplete, but Norns Mother has its own midi-CC map that conflicts a bit with my map - a work in progress?
 
 Samples are located in the \poly-GRAINS\samp directory.  PD is terrible at file handling, so my patch uses list.txt to list all the wav and WAV files in the samp directory.  Sub directories are fine if you want to add one.  To update the list, in SSH 
+
 cd ~\sidekick\patches\Organelle\poly-GRAINS
+
 and run this shell script:
+
 sudo ./listsamples.sh
